@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Event | Libro de Recetas Premium</title>
+    <meta name="description" content="Descubre un mundo de sabores con nuestro recetario colaborativo de alta cocina.">
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Quantum Culinary</h1>
+        <p>Un viaje gastronómico hecho con pasión y código.</p>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="recipeSearch" placeholder="Busca una receta (ej: Tacos, Pizza, Sushi)..." aria-label="Buscar recetas">
+        </div>
+
+        <div class="categories">
+            <button class="category-btn active" data-category="all">Todas</button>
+            <button class="category-btn" data-category="Entrante">Entrantes</button>
+            <button class="category-btn" data-category="Plato Principal">Platos Principales</button>
+            <button class="category-btn" data-category="Postre">Postres</button>
+            <button class="category-btn" data-category="Bebida">Bebidas</button>
+        </div>
+
+        <section class="recipes-grid" id="recipesGrid">
+            <!-- Las recetas se cargarán dinámicamente con JS -->
+        </section>
+    </main>
+
+    <!-- Carga de datos de los colaboradores -->
+    <script src="data1/data1.js"></script>
+    <script src="data2/data2.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
